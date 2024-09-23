@@ -1,0 +1,109 @@
+.app {
+  position: absolute;
+  background-image: url("./download.jpeg");
+  margin-top: 1%;
+  padding: 5%;
+  border-radius: 2.5rem;
+  height: 70vh;
+  width: 80%
+}
+
+.messages-container {
+  height: 400px;
+  overflow-y: auto;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+}
+
+
+
+.sent {
+  align-self: flex-end;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 1%;
+  border-radius: 2.5rem;
+  background-color: #ECDFCC;
+  width: 15vw;
+  padding: 1% 1% 1% 10%;
+  word-wrap:break-word;
+}
+
+/* Style for received messages */
+.received {
+  align-self: flex-start;
+  text-align: left;
+  padding: 1%;
+  border-radius: 2.5rem;
+  background-color: #697565;
+  width: 15vw;
+  padding: 1% 10% 1% 1%;
+  word-wrap:break-word;
+}
+
+.textBar {
+  background-color: #697565;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 90%;
+  right: 20%;
+}
+
+.textBar input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 40vw
+}
+
+.textBar button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: xx-large;
+  color: #ECDFCC;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .app
+  {
+    width:90%;
+    padding: 0%;
+    position: absolute;
+    left:5%;
+    margin-top: 5%;
+    height: 90%;
+  }
+  .messages-container
+  {
+    height: 600px;
+  }
+  .received
+  {
+    width:30vw
+  }
+  .sent
+  {
+    width: 30vw;
+  }
+  .textBar {
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    width: 95%
+  }
+  .textBar input
+  {
+    width:90%
+  }
+  .textBar button {
+    font-size: medium;
+    position: relative;
+    left:0%
+  }
+}
