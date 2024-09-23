@@ -8,7 +8,7 @@ function App() {
   const [input, setInput] = useState('');
   const messagesEndRef = useRef(null);
   useEffect(() => {
-    const ws = new WebSocket(process.env.REACT_APP_API_URL);
+    const ws = new WebSocket("https://anonymouschatapp-1.onrender.com");
     setSocket(ws);
     ws.onmessage = (event) => {
       const newMessage = event.data;
