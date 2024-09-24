@@ -9,6 +9,7 @@ function App() {
   const messagesEndRef = useRef(null);
   useEffect(() => {
     const ws = new WebSocket(process.env.REACT_APP_API_URL);
+    console.log(process.env.REACT_APP_API_URL);
     setSocket(ws);
     ws.onmessage = (event) => {
       const newMessage = event.data;
